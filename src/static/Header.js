@@ -12,7 +12,7 @@ const Header = () => {
 
   const postUser = () => {
     let data = userState;
-    fetch("http://localhost:8080/users/post/google", {
+    fetch("https://movie-app-backend-win.herokuapp.com/users/post/google", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify(data),
@@ -52,7 +52,7 @@ const Header = () => {
             <Nav.Link className="user text-warning pb-0">
               <p class="text-warning">Logged in as: {userState.username}</p>
             </Nav.Link>
-            <Nav.Link href="http://localhost:8080/logout">Logout</Nav.Link>
+            <Nav.Link href="https://movie-app-backend-win.herokuapp.com/logout">Logout</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
